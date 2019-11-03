@@ -1,0 +1,345 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+}
+.container {
+    padding: 10px;
+    
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;   
+    
+}
+
+.container header {
+    padding: 10px;
+    
+    height: 50px;
+    margin: 5px;
+    color: indianred;;
+    font-size: 400%;
+    font-family: 'La Belle Aurore', cursive;
+    
+    display: flex;
+    flex-grow: 1;
+ 
+    justify-content: center;
+    align-items: center;
+    
+}
+.container nav {
+    padding: 10px;
+    
+    height: 50px;
+    margin: 5px; 
+    font-family: Bradley Hand, cursive;  
+    color: sandybrown;
+    font-size: 175%;
+
+    display: flex;
+    flex-grow: 4;
+    
+
+
+}
+
+.container nav ul {
+    padding: 10px;
+    
+    list-style-type: none;
+    height: 20px;
+
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-around; 
+    
+    position: relative;
+    bottom: 30px;
+   
+}
+
+.container nav ul li {
+    position: relative;
+    bottom: 5px;
+}
+
+.img-container img {
+    
+    height: 800px;
+    width: 1885px;
+    object-fit: cover;
+}
+
+/* Nieodwiedzony link */
+a:link
+{
+    text-decoration: none;
+}
+/* Odwiedzony link */
+a:visited
+{
+    color: orange;
+    text-decoration: none;
+}
+/* Link po najechaniu kursorem */
+a:hover
+{
+    color: orangered;
+    text-decoration: none;
+}
+
+.AboutMe {
+    background-color: rgba(255, 110, 0, 0.2);
+    
+    height: 700px;
+      
+    display: flex; 
+}
+
+.AboutMe h1 {
+    
+    font-family: Bradley Hand, cursive;
+    padding: 10px;
+    margin: 5px;
+    width: 3500px; 
+    line-height: 30px;
+}
+.AboutMe h1 img {
+    height: 550px;
+    width: 550px;
+    position: relative;
+    top: 20px;
+}
+.AboutMe p {
+    
+    color: black;
+    background-color: peachpuff;
+    font-size: 150%;
+    font-family: Calibri;
+    padding: 90px 50px 70px 50px;
+    
+    
+    height: 520px;
+    width: 7000px;
+
+    line-height: 40px;
+    text-indent: 50px;
+    text-align: justify;
+    
+    align-self: center;
+}
+
+.CV-h {
+    background-color: rgba(255, 110, 0, 0.2);
+    
+    font-size: 170%;
+    padding: 10px;
+    font-family: Calibri;
+    display: flex;
+    color: sandybrown;
+    line-height: 40px;
+    justify-content: space-around;
+    align-items: baseline;
+    
+}
+.CV {
+    width: 10%;
+    flex-grow: 1;
+}
+
+.CV h1 {
+    color: peachpuff;
+    
+     
+    margin-right: 10px;
+    position: relative;
+    bottom: 15px;
+}
+
+.Skills {
+    width: 25%;
+    flex-grow: 4;
+}
+.Skills h2 {
+    
+    margin-left: 100px;
+}
+.Skills ul {
+    margin-left: 90px;
+}
+
+.Exp {
+    width: 25%;
+    flex-grow: 4;
+}
+.Exp h2 {
+    margin-left: 10px;
+}
+.Exp ul {
+    margin-right: 50px;
+    
+}
+ 
+.MyTravels {
+    text-align: center;
+    
+    display: flex;
+    flex-flow: row wrap;
+    
+    
+}
+
+.MyTravels-h {
+    font-size: 150%;
+    padding: 10px;
+    font-family: Calibri;
+    
+    margin-bottom: 500px;
+    position: absolute;
+    
+}
+.postcard {
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 100px;
+    
+    
+}
+.poscard p {
+    padding: 5px;
+    margin-top: 10px;
+    
+    
+}
+
+
+/* Hover effects */
+
+
+.photo1 img {
+    width: 30%;
+    width: 800px;
+    height: 550px;
+    border: 5px solid powderblue;
+    position: relative;
+    left: 155px;  
+}
+.photo1 {
+    transition: transform ease-in-out 1s;
+}
+.photo1:hover {
+    transform: scale(0.9);
+    
+}
+
+
+.photo2 img {
+    width: 30%;
+    width: 800px;
+    height: 550px;
+    border: 5px solid darkblue;
+    position: relative;
+    left: 155px; 
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+}
+
+.photo2:hover img {
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+}
+.photo3 img {
+    width: 30%;
+    width: 800px;
+    height: 550px;
+    margin-right: 0;
+    margin-left: 155px;
+    border: 5px solid grey;
+    position: relative;
+    bottom: 110px;
+}
+.photo3 {
+    transition: transform ease-in-out 1s;
+}
+.photo3:hover {
+    transform: rotate(-10deg);
+}
+.photo4 img {
+    width: 30%;
+    width: 800px;
+    height: 550px;
+    margin-left: 5px;
+    
+    
+    border: 5px solid red;
+    position: relative;
+    bottom: 110px;
+}
+.photo4 {
+    transition: transform ease-in 1s;
+}
+.photo4:hover {
+    transform: scale(0.9);
+}
+
+.contact {
+    font-family: Calibri;
+    font-size: 150%;
+    color: white;
+    display: flex;
+    
+    
+  }
+  .contact .formstyle{
+    height: 300px;
+    width: 300px;
+    margin-top: 200px;
+    position: relative;
+    right: 20%;
+
+  }
+  .contact textarea{
+    width: 700px;
+    height: 400px;
+    background: #FAFAFF;
+    border-radius: 15px;
+    margin-top: 200px;
+    margin-left: 150px;
+    position: relative;
+    right: 10%;
+  }
+  .contact input{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background: #FAFAFF;
+    border-radius: 15px;
+    width: 400px;
+    margin-right: 100px;
+    height: 30px;
+    
+  }
+  #subm{
+    position: relative;
+    left: 85%;
+    bottom: 5px;
+    margin-top: 30px;
+  }
+.contact h1 {
+    padding: 10px;
+    margin-bottom: 500px;
+    font-family: Calibri;
+    font-size: 170%;
+    margin-right: 500px;
+    margin-left: 20px;
+}
+
+  
+  
+
+
